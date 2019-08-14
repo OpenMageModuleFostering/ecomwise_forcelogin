@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<config>	
+	<modules>
+	<Ecomwise_Forcelogin>
+		<version>0.1.0</version>
+	</Ecomwise_Forcelogin>
+	
+	</modules>
+
+	<global>
+		<models>
+			<forcelogin>
+				<class>Ecomwise_Forcelogin_Model</class>
+			</forcelogin>
+		</models>
+		
+		<blocks>
+			<forcelogin>
+				<class>Ecomwise_Forcelogin_Block</class>
+			</forcelogin>
+		</blocks>
+		<helpers>
+            <forcelogin>
+                <class>Ecomwise_Forcelogin_Helper</class>
+            </forcelogin>
+        </helpers>
+	
+		<events>
+			<controller_action_postdispatch>
+				<observers>
+					<forcelogin_model_observer>
+						<type>singleton</type>						
+						<class>Ecomwise_Forcelogin_Model_Observer</class>
+						<method>forceLogin</method>
+					</forcelogin_model_observer>
+				</observers>
+			</controller_action_postdispatch>
+		</events>
+	</global>
+	<adminhtml>	
+    	<acl>
+	        <resources>
+	        	<all>
+					<title>Allow Everything</title>
+				</all>
+	            <admin>
+	                <children>
+	                    <system>
+	                        <children>
+	                            <config>
+	                                <children>
+	                                    <forcelogin translate="title" module="forcelogin">
+	                                        <title>Forced Login</title>
+	                                    </forcelogin>
+	                                </children>
+	                            </config>
+	                        </children>
+	                    </system>
+	               </children>
+	           </admin>
+	       </resources>
+	    </acl>
+    </adminhtml>   	
+</config>

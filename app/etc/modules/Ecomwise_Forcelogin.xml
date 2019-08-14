@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Ecomwise_Forcelogin>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Ecomwise_Forcelogin>
+	</modules>
+</config>
+

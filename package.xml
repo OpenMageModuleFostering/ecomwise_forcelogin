@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ecomwise_Forcelogin</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>OSL-3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Ecomwise_Forcelogin</summary>
+    <description>Ecomwise_Forcelogin</description>
+    <notes>0.1.0</notes>
+    <authors><author><name>EcomwiseTeam</name><user>EcomwiseTeam</user><email>info@experius.nl</email></author></authors>
+    <date>2013-01-11</date>
+    <time>07:59:06</time>
+    <contents><target name="magecommunity"><dir><dir name="Ecomwise"><dir name="Forcelogin"><dir name="Block"><dir name="System"><dir name="Config"><file name="Version.php" hash="e5ea1ca5d03c0d3fce4f91144c35c05c"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="529c0c5b3186eae81d6ee9a3fb900214"/></dir><dir name="Model"><file name="Observer.php" hash="40c979628682913861e6f2417dfba10c"/></dir><dir name="etc"><file name="config.xml" hash="7870d2b805342652ff8c49c4ea913612"/><file name="system.xml" hash="beb7b227f4a299b509532711913db446"/></dir></dir></dir></dir></target><target name="mageetc"><dir><dir name="modules"><file name="Ecomwise_Forcelogin.xml" hash="3a880ecb645874100851c30a0d09fb2a"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>5.4.8</max></php></required></dependencies>
+</package>

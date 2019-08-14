@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Ecomwise_Forcelogin",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "",
+    "description": "Ecomwise_Forcelogin",
+    "authors": [
+    {
+        "name": "EcomwiseTeam",
+        "email": "info@experius.nl"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
