@@ -14,8 +14,10 @@ class Ecomwise_Forcelogin_Model_Observer extends Varien_Object{
 		     &&  Mage::app()->getRequest()->getModuleName() !== 'admin'
 		     &&  Mage::app()->getRequest()->getModuleName() !== 'api'
 		     &&  Mage::app()->getRequest()->getControllerName() !== 'account') {
-		     	 $session = Mage::getSingleton("customer/session");
-                 $session->setBeforeAuthUrl(Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB).'home');
+		     	 $session = Mage::getSingleton("customer/session");		     	
+                 	     	 
+		     	 $session->setBeforeAuthUrl(Mage::helper('customer')->getLoginUrl());
+                 
 		     	 Mage::app()->getResponse()
 		     	            ->setRedirect(Mage::helper('adminhtml')
 		     	            ->getUrl("customer/account/login",  array('_type' => 'direct_link')));
