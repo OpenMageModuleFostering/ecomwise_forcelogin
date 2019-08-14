@@ -2,7 +2,7 @@
 <config>	
 	<modules>
 	<Ecomwise_Forcelogin>
-		<version>1.0.4</version>
+		<version>1.0.5</version>
 	</Ecomwise_Forcelogin>
 	
 	</modules>
@@ -60,5 +60,12 @@
 	           </admin>
 	       </resources>
 	    </acl>
-    </adminhtml>   	
+    </adminhtml>  
+	<default>
+		<forcelogin>			
+			<parameters>
+				<enabled>1</enabled>										
+			</parameters>		
+		</forcelogin>
+	</default>  	
 </config>
