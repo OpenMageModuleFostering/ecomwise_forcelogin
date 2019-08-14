@@ -9,7 +9,7 @@ class Ecomwise_Forcelogin_Model_Observer extends Varien_Object{
 		$adminUrl = $url->asArray();
 	
 		
-		$forceLogin = (bool) Mage::getStoreConfig('forcelogin/forcelogin/disable_ext', Mage::app()->getStore());	
+		$forceLogin = (bool) Mage::getStoreConfig('forcelogin/parameters/enabled', Mage::app()->getStore());	
 	 	if(!$forceLogin){
 			if (    ! Mage::getSingleton('customer/session')->isLoggedIn() 
 			     && ! Mage::getSingleton('admin/session')->isLoggedIn()
